@@ -1,0 +1,60 @@
+[33mcommit 51b37e02b9ccd71dabbbffcf978f69a0e9161ff3[m
+Merge: 9b345e5 5a3a541
+Author: MTERESA <tere8910@gmail.com>
+Date:   Tue Sep 22 12:06:49 2015 -0500
+
+    No resuelto el problema del merge conflicto con la bd
+
+[33mcommit 9b345e57badfd385050328cc752d79b1e287d8bb[m
+Author: MTERESA <tere8910@gmail.com>
+Date:   Tue Sep 22 11:27:44 2015 -0500
+
+    Realizacion de los widgets derechos
+
+[33mcommit 5a3a541d79353d79406dac89ef60e9574ec1efac[m
+Author: Adrian <adrian.sg@fese.org.mx>
+Date:   Tue Sep 22 11:03:16 2015 -0500
+
+    Menu y contenido actualizado, con entradas de noticias
+
+[33mcommit 78b982df28c5daf2c56aa03fc6f73d04f13419c2[m
+Author: Adrian <adrian.sg@fese.org.mx>
+Date:   Mon Sep 21 21:03:36 2015 -0500
+
+    Publicacion de contenido beta, error en seleccion de pagina y post
+
+[33mcommit 1086c9af227fd0a68487ed6354833f5d0b0240af[m
+Author: MTERESA <tere8910@gmail.com>
+Date:   Mon Sep 21 10:44:43 2015 -0500
+
+    Elaboracion del menu - ACTUALIZAR BD
+
+[33mcommit 05ca5aaa2335033642e4f13399df5c9300bb8d51[m
+Author: MTERESA <tere8910@gmail.com>
+Date:   Sat Sep 19 01:09:01 2015 -0500
+
+    Plugins instalados correctamente Act de transposh-Shortcodes Ultimate-Display Widgets-Sticky Menu y la basde de datos
+
+[33mcommit 660f82eca4a64ca86158bbf5b40008604f0787b6[m
+Author: MTERESA <tere8910@gmail.com>
+Date:   Sat Sep 19 01:01:25 2015 -0500
+
+    Plugins instalados correctamente Act de transposh-Shortcodes Ultimate-Display Widgets-Sticky Menu
+
+[33mcommit 066d0e964730bf8f72b1fc7be50678b7fa4d89b6[m
+Author: Adrian <adrian.sg@fese.org.mx>
+Date:   Fri Sep 18 20:04:33 2015 -0500
+
+    Actualizacion de idioma espanol internacional y plugin transposh funcional
+
+[33mcommit 3a0ffcaab679c44bde1b200b32f1b6ad594c89e7[m
+Author: Adrian <adrian.sg@fese.org.mx>
+Date:   Fri Sep 18 16:00:56 2015 -0500
+
+    Actualizacion de hoja de estilo Twentythirteen style.css
+
+[33mcommit 15d29b15a9b699010b44ccd7660626b52031525a[m
+Author: Ubuntu <fese@devfese.devfese.g9.internal.cloudapp.net>
+Date:   Fri Sep 18 15:50:58 2015 +0000
+
+    Inicio repositorio cambio wordpress pagina fese
