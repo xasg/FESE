@@ -91,13 +91,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.iconos{
-  text-align: center;
-  font-size: 43px;
-  color: ;
-
-}
-
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -612,7 +605,7 @@ pre code {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   /**
   margin-right: -0.75rem;
   margin-left: -0.75rem;
@@ -638,7 +631,10 @@ pre code {
   position: relative;
   width: 100%;
   padding-right: 0.75rem;
+
   padding-left: 0rem;
+  /* margin: 1px; */
+  /* border: 2px solid black; */
 }
 
 .col {
@@ -1109,26 +1105,31 @@ pre code {
   .col-md-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
+    padding: 2rem;
   }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
+    padding: 2rem;
   }
 
   .col-md-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+    padding: 0.75rem;
   }
 
   .col-md-5 {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
+    padding: 2rem;
   }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 2rem;
   }
 
   .col-md-7 {
@@ -6172,6 +6173,7 @@ button.bg-dark:focus {
 
 .border {
   border: 1px solid #dee2e6 !important;
+  box-shadow: 1px 1px 2px  #000 !important;
 }
 
 .border-top {
@@ -6247,7 +6249,7 @@ button.bg-dark:focus {
 }
 
 .rounded-sm {
-  border-radius: 0.2rem !important;
+  border-radius: 0.75rem !important;
 }
 
 .rounded {
@@ -9643,6 +9645,7 @@ button.bg-dark:focus {
 
 .text-justify {
   text-align: justify !important;
+  
 }
 
 .text-wrap {
@@ -10846,14 +10849,13 @@ padding-right: 0rem;
     background: #fff;
 }
 
-
-
 .pad {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .pad_text{
   padding-top: 3%;
   padding-bottom: 3%;
+  }
 }
