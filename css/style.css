@@ -80,6 +80,13 @@ div.centrar
     
 }
 
+.FondoVerdeFese
+{
+    
+        background-color: #00727C;
+    
+}
+
 
 
 
@@ -99,7 +106,7 @@ div.centrar
 }
 
 nav.navbar.navbar-default.nav-white ul.nav > li > a, .nav-white .header-social-icon a,.nav-white .header-search-form:focus{
-    color: #fff;
+    color: #fff;   /***CAMBIAS EL COLOR DE LAS LETRAS DEL MENU SUPEIOR MIENTRAS NO ESTE SELECCIONADA*****/
 }
 .light-version nav.navbar.navbar-default.nav-white ul.nav > li > a,.light-version .nav-white .header-social-icon a,.light-version .nav-white .header-search-form:focus{
     color: #384141;
@@ -808,8 +815,8 @@ ul.packages li i {
     background:#384141;
 }
 
-.pushmenu {
-    background:#17acc6;
+.pushmenu { /***************************ESTA PARTE ES PARA MODIFICAR EL MENU LATERAL*************************/
+    background:#00727C;
     padding: 20px 15px;
     width:600px;
     height: 100%;
