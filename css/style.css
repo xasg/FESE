@@ -80,7 +80,7 @@ Google Font
     
 }
  
-} 
+
 
 .FondoVerdeFese
 {
@@ -595,7 +595,7 @@ nav.navbar.navbar-default.nav-white ul.nav > li > a, .nav-white .header-social-i
 .price{
     position: relative;
     display: inline-block;
-    float: left;
+   /* float: left;*/
     margin-right: 15px;
 }
 
