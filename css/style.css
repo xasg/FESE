@@ -61,7 +61,7 @@ Google Font
 ====================================== */
 /* clases que implementamos en el codigo*/
 
-div.centrar
+.centrar
 {
     margin-top: 150px;
     text-align: center;
@@ -79,6 +79,8 @@ div.centrar
     font-weight: bold;
     
 }
+ 
+} 
 
 .FondoVerdeFese
 {
@@ -403,7 +405,7 @@ nav.navbar.navbar-default.nav-white ul.nav > li > a, .nav-white .header-social-i
     width: 100%;
 }
 .about-box{
-    padding: 15px;.contact-form .form_inputs
+    padding: 15px;
 }
 
 /* team */
