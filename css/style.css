@@ -79,6 +79,14 @@ Google Font
     font-weight: bold;
     
 }
+
+li.sangriaLista {
+    list-style-position: outside;
+    list-style-type:square;
+    
+
+    
+  }
  
 
 
