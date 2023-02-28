@@ -83,18 +83,28 @@ Google Font
 li.sangriaLista {
     list-style-position: outside;
     list-style-type:square;
-    
-
-    
+       
   }
+
+.sangriadDiv
+{
+    
+    margin-right: 3em;
+}
+.sangriaPrimerDiv
+{
+    margin-left: 4em;
+}
+.margenFondoDivs
+{
+    margin-bottom: 2em;
+}
  
 
 
 .FondoVerdeFese
-{
-    
-        background-color: #00727C;
-    
+{    
+        background-color: #00727C;    
 }
 .color_titulo
 {
