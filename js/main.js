@@ -109,10 +109,10 @@ jQuery(function ($) {
     });
 
     //scroll sections
-    $(".scroll").on('click', function (event) {
+    /**$(".scroll").on('click', function (event) {
         event.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top}, 750);
-    });
+    });**/
 
 
     /*==============================================================
