@@ -80,7 +80,8 @@
 
 <header>
     <!-- start navigation -->
-    <nav class="nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light FondoVerdeFese nav_line">
+    
+    <nav class="nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
         <div class="container nav-header-container">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
@@ -96,7 +97,7 @@
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
                             <li class="active">
-                                <a href="index.html" >Inicio</a>
+                                <a href="../index.html" >Inicio</a>
                             </li>
                             <!--<li>
                                 <a href="#feature" class="scroll">Resumen</a>
@@ -279,12 +280,10 @@ s
                               <br><br>
                             <div class="center-col last-paragraph-no-margin ">
                                 <div class= "col-sm-12 row " >
-                                    <div class="col-sm-6 " >
-                                        <div class="text-white ">                                            
-                                            <a class="btn btn-rounded btn-blue btn-hvr-white" data-toggle="modal" data-target="#myModal">Eres empresa, Ingresa aqui</a>                                            
-                                        </div>
+                                    <div class="col-sm-6 centrarBoton " >                                                                                   
+                                            <a class="btn btn-rounded btn-blue btn-hvr-white   " data-toggle="modal" data-target="#myModal">Eres empresa, Ingresa aqui</a> 
                                     </div>
-                                    <div class="col-sm-6 " >
+                                    <div class="col-sm-6 centrarBoton " >
                                         <a  class="btn btn-rounded btn-blue btn-hvr-white" data-toggle="modal" data-target="#myModal2">Eres beneficiario, ingresa aqui</a>
                                     </div>
                                 </div>
