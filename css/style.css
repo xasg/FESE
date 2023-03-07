@@ -72,17 +72,6 @@ Google Font
     margin-bottom: 10px;**/
 }
 
-.centrarBoton
-{
-    margin-top: 30px;
-    text-align: center;
-   /* text-shadow: 2px 10px 4px black;
-    
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10px;**/
-}
-
 .centro{
     font-size: 22px;
     text-align: center;
@@ -120,25 +109,6 @@ li.sangriaLista {
 .color_titulo
 {
     color: #00727C; 
-}
-
-
-
-/**************************************************************************************************/
-.carrusel{
-  background-image: url(../images/index/BeneficiosEmpresas.webp);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
-.carruselempresarial{
-  background-image: url(../images/empresarial/yeguwgcywebcwb.webp);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
 }
 
 
@@ -2101,7 +2071,13 @@ nav.navbar.bootsnav li.dropdown ul li {
     left: 0 !important;
 }
 
-
+.carrusel{
+  background-image:url(../images/index/BeneficiosEmpresas.webp);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
 .rs-particles-canvas {
 
