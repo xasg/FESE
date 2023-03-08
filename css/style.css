@@ -61,6 +61,22 @@ Google Font
 ====================================== */
 /* clases que implementamos en el codigo*/
 
+.carrusel{
+    background-image:url(../images/index/BeneficiosEmpresas.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .FondoEsr{
+    background-image:url(../images/esr/bosque.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
 .centrar
 {
     margin-top: 150px;
@@ -73,10 +89,11 @@ Google Font
 }
 
 .centro{
-    font-size: 22px;
+    
     text-align: center;
     text-shadow: 2px 10px 10px black;
     font-weight: bold;
+    
     
 }
 
@@ -2071,13 +2088,7 @@ nav.navbar.bootsnav li.dropdown ul li {
     left: 0 !important;
 }
 
-.carrusel{
-  background-image:url(../images/index/BeneficiosEmpresas.webp);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
+
 
 .rs-particles-canvas {
 
