@@ -69,6 +69,19 @@ Google Font
     background-size: cover;
   }
 
+ 
+  .contenedorDescripcion{
+    position: relative;
+    width: 500px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  .imagenDescripcion {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  
   .FondoEsr{
     background-image:url(../images/esr/bosque.webp);
     background-repeat: no-repeat;

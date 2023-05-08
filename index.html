@@ -36,6 +36,41 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css"/>
 
+    <style>
+        .textoDescripcionTitulo 
+        {
+            position: absolute;
+            top: 10%;
+            left: 2em;
+            right: 2em;
+            color: white;
+            text-align: center;            
+            padding: 10px;
+            z-index: 1;  
+            font-size: 20px;          
+        }
+        .textoDescripcionContenido 
+        {
+            position: absolute;
+            top: 45%;
+            left: 2em;
+            right: 2em;
+            color: white;
+            text-align: center;            
+            padding: 10px;
+            z-index: 1;            
+        }
+        .contenedorDescripcion
+        {
+            position: relative;
+        }
+        .imagenDescripcion
+        {
+            width: 100%;
+            
+        }
+
+    </style>
 
 </head>
 
@@ -222,7 +257,7 @@
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
-s
+
                          style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
                         
                         <div  class="col-sm-5 ">APROVECHA LOS BENEFICIOS <br>QUE TENEMOS PARA TU EMPRESA</div>
@@ -403,9 +438,22 @@ s
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 no-padding">
-                    <div class="about-image hover-effect">
-                        <img alt="Fese Empresarial" src="images/index/BeneficiosEmpresasA.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+                    <!--------------------------------------------------------------------------------->
+                    
+                    <div class="contenedorDescripcion about-image hover-effect">
+                        <img class="imagenDescripcion " src="images/index/BeneficiosEmpresasA.webp" alt="Beneficios Empresa" >
+                        <p class="textoDescripcionTitulo">
+                            <strong>
+                                Aprovecha los beneficios que tenemos para tu empresa
+                            </strong>
+                        </p>
+                        <br>
+                        <p  class="textoDescripcionContenido">
+                            Identificamos, desarrollamos, capacitamos y vinculamos el talento universitario con empresas de cualquier tamaño.
+                        </p>
                     </div>
+                    
+                    <!--------------------------------------------------------------------------------->
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
                     <div class="split-box text-center center-block equalheight">
@@ -431,9 +479,24 @@ s
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 no-padding pull-right sm-float-none">
-                    <div class="about-image hover-effect">
-                        <img alt="Estudiante" src="images/index/PracticasEstadiasEstancias.webp" class="equalheight" width="701" height="430">
-                    </div>
+
+                    <!--------------------------------------------------------------------------------------------->
+                    <div class="contenedorDescripcion about-image hover-effect">
+                        <img class="imagenDescripcion " src="images/index/PracticasEstadiasEstancias.webp" alt="Beneficios Empresa" >
+                        <p class="textoDescripcionTitulo">
+                            <strong>
+                                Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
+
+                            </strong>
+                        </p>
+                        <br>
+                        <p  class="textoDescripcionContenido">
+                            Como estudiante puedes crecer y desempeñarte de manera positiva dentro de las empresas.
+
+                        </p>
+                    </div>                   
+
+                    <!---------------------------------------------------------------------------------------------->
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
                     <div class="split-box text-center center-block equalheight">
@@ -442,11 +505,13 @@ s
                                  <!--Aqui podemos agregar un texto arriba del titulo, este texto va sin la etiqueta <p>-->
                             </div>
                             <h3 class=" alt-font text-extra-dark-gray font-weight-300">
-                                <strong>Prácticas, estadías y/o estancias profesionales</strong>
+                                <strong>
+                                    Apoyamos a universidades, empresas y estudiantes
+                                </strong>
                             </h3>
                             
                             <p text-extra-dark-gray>
-                                Las habilidades y competencias se ven reforzadas si las pones en práctica en el mundo laboral,  esto sin importar la carrera que estés estudiando, con estos nuevos conocimientos adquiridos destacarás sobre los demás.
+                                
                             </p>
                             <!--<a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Informarte</a>-->
                         </div>
@@ -459,9 +524,23 @@ s
       <div class="container-fluid">
           <div class="row">
               <div class="col-md-6 no-padding">
-                  <div class="about-image hover-effect">
-                      <img alt="Fese Empresarial" src="images/index/ApoyoEmpresasUniversidades.webp" class="equalheight" width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
-                  </div>
+
+
+
+                <!------------------------------------------------------------------------------------------------>
+                <div class="contenedorDescripcion about-image hover-effect">
+                    <img class="imagenDescripcion " src="images/index/ApoyoEmpresasUniversidades.webp" alt="Beneficios Empresa" >
+                    <p class="textoDescripcionTitulo">
+                        <strong>
+                            Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
+                        </strong>
+                    </p>
+                    <br>
+                    <p  class="textoDescripcionContenido">
+                        Somos una asociación civil respaldada por instituciones de educación superior, dedica a vincular jóvenes universitarios de todo el país con oportunidades de experiencia laboral.
+                    </p>
+                </div> 
+                <!-------------------------------------------------------------------------------------------------->
               </div>
               <div class="col-md-6 sm-padding-50px-tb">
                   <div class="split-box text-center center-block equalheight">
