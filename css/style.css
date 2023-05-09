@@ -61,38 +61,7 @@ Google Font
 ====================================== */
 /* clases que implementamos en el codigo*/
 
-.contenedorDescripcion 
-        {
-          position: relative;
-          
-        }     
-        
-        .textoTitulo {
-          position: absolute;
-          top: 20%;
-          left: 10%;
-          right: 10%;
-          
-          font-size: 20px;
-          color: white;
-          text-align: center;
-          
-          
-          z-index: 1;
-        }
-        .textoContenido {
-          position: absolute;
-          top: 40%;
-          left: 10%;
-          right: 10%;
-          
-          
-          color: white;
-          text-align: center;
-          
-          padding: 10px;
-          z-index: 1;
-        }
+
 
 
 .carrusel{
