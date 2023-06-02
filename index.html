@@ -35,42 +35,46 @@
     <link rel="stylesheet" href="css/style.min.css"/>
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css"/>
-
+    
     <style>
-        .textoDescripcionTitulo 
-        {
-            position: absolute;
-            top: 10%;
-            left: 2em;
-            right: 2em;
-            color: white;
-            text-align: center;            
-            padding: 10px;
-            z-index: 1;  
-            font-size: 20px;          
-        }
-        .textoDescripcionContenido 
-        {
-            position: absolute;
-            top: 45%;
-            left: 2em;
-            right: 2em;
-            color: white;
-            text-align: center;            
-            padding: 10px;
-            z-index: 1;            
-        }
-        .contenedorDescripcion
-        {
-            position: relative;
-        }
-        .imagenDescripcion
-        {
-            width: 100%;
-            
-        }
 
-    </style>
+        .contenedorDescripcion 
+        {
+          position: relative;
+          
+        }     
+        
+        .textoTitulo {
+          position: absolute;
+          top: 20%;
+          left: 10%;
+          right: 10%;
+          
+          font-size: 20px;
+          color: white;
+          text-align: center;
+          
+          
+          z-index: 1;
+        }
+        .textoContenido {
+          position: absolute;
+          top: 45%;
+          left: 10%;
+          right: 10%;
+          
+          
+          color: white;
+          text-align: center;
+          
+          padding: 10px;
+          z-index: 1;
+        }
+      </style> 
+
+
+
+    
 
 </head>
 
@@ -258,6 +262,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
+
                          style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
                         
                         <div  class="col-sm-5 ">APROVECHA LOS BENEFICIOS <br>QUE TENEMOS PARA TU EMPRESA</div>
@@ -281,23 +286,14 @@
                               <!--<p  class="text-white">
                                
                               </p>-->                              
-                          </div>
-                      </div>
+                            </div>
+                                <br><a href="#feature"  class=" scroll btn btn-transparent-white btn-rounded btn-large margin-20px-top">Mas información</a>
+                            </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  <div class="filtering col-sm-12 text-center margin-50px-bottom">
+                        
+                        
+                    </div>
                     <!--<div class=" centrar "                         
                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                          data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-82','-71']"
@@ -346,7 +342,8 @@
                          style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
                         <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large">Get Started Now</a>
                       </div>-->
-                </li>
+                </li>  
+                
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
         </div>
@@ -438,20 +435,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 no-padding">
-                    <!--------------------------------------------------------------------------------->
-                    
-                    <div class="contenedorDescripcion about-image hover-effect">
-                        <img class="imagenDescripcion " src="images/index/BeneficiosEmpresasA.webp" alt="Beneficios Empresa" >
-                        <p class="textoDescripcionTitulo">
-                            <strong>
-                                Aprovecha los beneficios que tenemos para tu empresa
-                            </strong>
+<!----------------------------------------------------------------------------------------------------------->
+                    <div class=" about-image hover-effect contenedorDescripcion">
+                        <img alt="Fese Empresarial" src="images/index/BeneficiosEmpresas.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+
+                        <p class="textoTitulo"> 
+                            <strong> Aprovecha los beneficios que tenemos para tu empresa </strong>
                         </p>
-                        <br>
-                        <p  class="textoDescripcionContenido">
+
+                        <p class="textoContenido">
                             Identificamos, desarrollamos, capacitamos y vinculamos el talento universitario con empresas de cualquier tamaño.
                         </p>
                     </div>
+<!------------------------------------------------------------------------------------------------------------->
                     
                     <!--------------------------------------------------------------------------------->
                 </div>
@@ -480,23 +476,22 @@
             <div class="row">
                 <div class="col-md-6 no-padding pull-right sm-float-none">
 
-                    <!--------------------------------------------------------------------------------------------->
-                    <div class="contenedorDescripcion about-image hover-effect">
-                        <img class="imagenDescripcion " src="images/index/PracticasEstadiasEstancias.webp" alt="Beneficios Empresa" >
-                        <p class="textoDescripcionTitulo">
-                            <strong>
-                                Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
+            <!------------------------------------------------------------------------------------>
 
-                            </strong>
-                        </p>
-                        <br>
-                        <p  class="textoDescripcionContenido">
-                            Como estudiante puedes crecer y desempeñarte de manera positiva dentro de las empresas.
+            <div class="about-image hover-effect contenedorDescripcion">
+                <img alt="Practicas profesionales" src="images/index/PracticasEstadiasEstancias.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+                <p class="textoTitulo"> 
+                    <strong> Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
+                    </strong>
+                </p>
 
-                        </p>
-                    </div>                   
+                <p class="textoContenido">
+                    Como estudiante puedes crecer y desempeñarte de manera positiva dentro de las empresas.
 
-                    <!---------------------------------------------------------------------------------------------->
+                </p>
+            </div>
+            <!------------------------------------------------------------------------------------->
+
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
                     <div class="split-box text-center center-block equalheight">
@@ -524,23 +519,21 @@
       <div class="container-fluid">
           <div class="row">
               <div class="col-md-6 no-padding">
-
-
-
-                <!------------------------------------------------------------------------------------------------>
-                <div class="contenedorDescripcion about-image hover-effect">
-                    <img class="imagenDescripcion " src="images/index/ApoyoEmpresasUniversidades.webp" alt="Beneficios Empresa" >
-                    <p class="textoDescripcionTitulo">
-                        <strong>
-                            Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
-                        </strong>
-                    </p>
-                    <br>
-                    <p  class="textoDescripcionContenido">
-                        Somos una asociación civil respaldada por instituciones de educación superior, dedica a vincular jóvenes universitarios de todo el país con oportunidades de experiencia laboral.
-                    </p>
-                </div> 
                 <!-------------------------------------------------------------------------------------------------->
+                <div class="about-image hover-effect contenedorDescripcion">
+                    <img alt="asociación civil" src="images/index/ApoyoEmpresasUniversidades.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+                
+                    <p class="textoTitulo"> 
+                        <strong>Apoyamos a universidades, empresas y estudiantes   </strong>
+                    </p>
+                
+                    <p class="textoContenido">
+                        Somos una asociación civil respaldada por instituciones de educación superior, dedica a vincular jóvenes universitarios de todo el país con oportunidades de experiencia laboral.
+                
+                
+                    </p>
+                </div>
+                <!---------------------------------------------------------------------------------------------------->
               </div>
               <div class="col-md-6 sm-padding-50px-tb">
                   <div class="split-box text-center center-block equalheight">
@@ -662,14 +655,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
-                <div class="sec-title margin-50px-bottom">-->
-                    <!--<div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Portfolio Designs</div>--> <!--aqui podemos poner texto arriba del titulo -->
+                <div class="sec-title margin-50px-bottom">
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Portfolio Designs</div>--> <!--aqui podemos poner texto arriba del titulo -->
                     <!--<h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Ellos confian en nosotros.</h3>-->
-                    <!--<p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
+                        Ellos confian en nosotros.</h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Perspiciatis unde omnis iste natus error sit.</p>-->
-                <!--</div>
+                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
+                </div>
             </div>
         </div>
     </div>
