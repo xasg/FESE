@@ -33,18 +33,24 @@
     <link rel="stylesheet" href="css/core.min.css"/>
     <!-- style -->
     <link rel="stylesheet" href="css/style.min.css"/>
+    <!----REFERENCIA AL BOOSTRAPS EN CSS/STYLE.CSS-->
+    <!--<link rel="stylesheet" href="css/style.css"/>-->
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css"/>
+    <!----Se agrega el estilo para el boton de whatsApp-->
+    <link rel="stylesheet" href="style-button-ws.css">
     
     <style>
-
         .contenedorDescripcion 
         {
-          position: relative;
-          
-        }     
-        
-        .textoTitulo {
+          position: relative;          
+        }
+        .text-light
+        {        
+            color: #f8f9fa!important;
+        }
+        .textoTitulo 
+        {
           position: absolute;
           top: 20%;
           left: 10%;
@@ -53,8 +59,6 @@
           font-size: 20px;
           color: white;
           text-align: center;
-          
-          
           z-index: 1;
         }
         .textoContenido {
@@ -62,15 +66,12 @@
           top: 45%;
           left: 10%;
           right: 10%;
-          
-          
           color: white;
           text-align: center;
-          
           padding: 10px;
           z-index: 1;
         }
-      </style> 
+    </style> 
 
 
 
@@ -79,6 +80,26 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
+    
+        
+    <div class="whatsapp-button" onclick="toggleWhatsAppPopup()">    <!----LOS DOS SIGUIENTES DIVS, SON EL COIDIFO PARA EL BOTON DE WHATSAPP--->
+        <!-- <i class="fab fa-whatsapp"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+    </div>
+    <div id="whatsappPopup" class="whatsapp-popup">
+        <button class="close-button" onclick="toggleWhatsAppPopup()">X</button>
+        <h2 class="text-light">¡Hola!</h2>
+        <p class="text-light" >Gracias por visitar nuestro sitio web. ¿Cómo podemos ayudarte hoy?</p>
+        <textarea class="input-field" id="whatsappMessage" placeholder="Escribe tu mensaje"></textarea>
+        <button class="send-button" onclick="sendWhatsAppMessage()">Enviar</button>
+        <button class="send-button" onclick="clearWhatsAppMessage()">Limpiar</button>
+    </div>
+    
+    
 <!--ESTO PARTE SE COMENTO YA QUE PARA MEJORAR EL RENDIMIENTO NOS PIDE MOSTRAR EL TEXTO MIENTRAS SE RENDERIZAN LAS IMAGENES Y ESTO ES EL LOAD DE LA PAGINA-->
 <!--<div id="loader">    
         <div class="loader-inner">
@@ -198,6 +219,7 @@
     </nav>
 </header>
 <!-- end header -->
+<!--BOTON DE WHATS APP-->
 
 <!-- start slider -->
 <section id="home" class="no-padding no-transition">
@@ -1284,5 +1306,7 @@
 <script src="js/map.min.js"></script>
 <!-- setting -->
 <script src="js/main.min.js"></script>
+<!--sCRIPT PARA EL BOTON DE WHATSAPP--->
+<script src="btn-ws.js"></script>   
 </body>
 </html>
