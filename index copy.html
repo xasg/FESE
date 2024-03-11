@@ -1,0 +1,591 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots"  content="index,follow"  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+    <meta name="author" content="Theme Industry">
+    <!-- description -->
+    <meta name="description" content="boltex">
+    <!-- keywords -->
+    <meta name="keywords" content="">
+    <!-- title -->
+    <title>FESE</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/logos/favicon.ico">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css"/>
+    <!-- cube Portfolio -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <!-- revolution slider -->
+    <link rel="stylesheet" href="revolution/css/settings.css"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- bundle css -->
+    <link rel="stylesheet" href="css/core.min.css"/>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!----REFERENCIA AL BOOSTRAPS EN CSS/STYLE.CSS-->
+    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/custom.css"/>
+    <!----Se agrega el estilo para el boton de whatsApp-->
+    <link rel="stylesheet" href="style-button-ws.css">
+    
+    <style>
+        .contenedorDescripcion 
+        {
+          position: relative;          
+        }
+        .text-light
+        {        
+            color: #f8f9fa!important;
+        }
+        .textoTitulo 
+        {
+          position: absolute;
+          top: 20%;
+          left: 10%;
+          right: 10%;
+          
+          font-size: 20px;
+          color: white;
+          text-align: center;
+          z-index: 1;
+        }
+        .textoContenido {
+          position: absolute;
+          top: 45%;
+          left: 10%;
+          right: 10%;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          z-index: 1;
+        }
+        .texto_boton{
+            font-size: 28px !important;
+        }
+    </style> 
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
+    
+        
+    <div class="whatsapp-button" onclick="toggleWhatsAppPopup()">    <!----LOS DOS SIGUIENTES DIVS, SON EL COIDIFO PARA EL BOTON DE WHATSAPP--->
+        <!-- <i class="fab fa-whatsapp"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+    </div>
+    <div id="whatsappPopup" class="whatsapp-popup">
+        <button class="close-button" onclick="toggleWhatsAppPopup()">X</button>
+        <h2 class="text-light">¡Hola!</h2>
+        <p class="text-light" >Gracias por visitar nuestro sitio web. ¿Cómo podemos ayudarte hoy?</p>
+        <textarea class="input-field" id="whatsappMessage" placeholder="Escribe tu mensaje"></textarea>
+        <button class="send-button" onclick="sendWhatsAppMessage()">Enviar</button>
+        <button class="send-button" onclick="clearWhatsAppMessage()">Limpiar</button>
+    </div>
+    
+    
+<!--ESTO PARTE SE COMENTO YA QUE PARA MEJORAR EL RENDIMIENTO NOS PIDE MOSTRAR EL TEXTO MIENTRAS SE RENDERIZAN LAS IMAGENES Y ESTO ES EL LOAD DE LA PAGINA-->
+<!--<div id="loader">    
+        <div class="loader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+</div>-->
+
+<!-- start header -->
+<header>
+    <!-- start navigation -->
+    <nav class="nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
+        <div class="container nav-header-container ">
+            <div class="row">
+                <div class="col-md-2 col-xs-5  ">
+                    <a href="#home" title="Logo" class="logo scroll">
+                        <img src="images/logos/LogoFeseBlanco.webp" alt="Logo FESE" class="logo-light default" width="200" height="63"> <!--logo color claro-->    
+                        <img src="images/logos/LogoFeseVerde.webp"  alt="Logo FESE"  class="logo-dark" width="216" height="90">   <!--logo color oscuro-->
+                            
+                    </a>
+                </div>
+                <!-- end logo -->
+                <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
+                    <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
+                        <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal"
+                            data-in="fadeIn" data-out="fadeOut">
+                            <!-- start menu item -->
+                            <li class="active">
+                                <a href="#home" class="scroll">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#feature" class="scroll">Resumen</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="scroll">Qué hacemos</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="scroll">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20 no-padding">
+                    <div class="header-social-icon sm-display-none" aria-hidden="true">
+                        <a href="https://www.facebook.com/FESE.MX" class="facebook-bg-hvr" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/fese_mx" class="twitter-bg-hvr" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/fundacion-educacion-superior-empresa/" class="linkedin-bg-hvr" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <!--<a href="https://www.youtube.com/user/FeseMexico." class="youtube-bg-hvr"><i class="fa fa-youtube"></i></a>-->
+                    </div>
+                </div>
+                <!--side nav -->
+                <div id="menu_bars" class="right menu_bars">
+                    <span class="t1"></span>
+                    <span class="t2"></span>
+                    <span class="t3"></span>
+                </div>
+                <div class="sidebar_menu">
+                    <nav class="pushmenu pushmenu-right">
+                        <a class="push-logo" href="#."><img src="images/logos/LogoFeseBlanco.webp" alt="logo FESE" width="200" height="63"></a>
+                        <div class="medium-icon side-nav-social-icon list-inline">
+                            <a class="facebook-bg-hvr" href="https://www.facebook.com/FESE.MX" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a class="twitter-bg-hvr" href="https://twitter.com/fese_mx" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a class="linkedin-bg-hvr" href="https://www.linkedin.com/company/fundacion-educacion-superior-empresa/" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                        <ul class="push_nav centered">
+                            <li class="clearfix">
+                                <a href="#home" class="scroll">Inicio</a>
+
+                            </li>
+                            <li class="clearfix">
+                                <a href="#feature" class="scroll">Resumen</a>
+
+                            </li>
+                            <li class="clearfix">
+                                <a href="#about" class="scroll">Qué hacemos</a>
+
+                            </li>
+                            <li class="clearfix">
+                                <a href="#contact" class="scroll">Contacto</a>
+
+                            </li>
+
+                        </ul>
+
+                        <p class="push-bottom text-white text-small">FESE "Fundación Educación Superior Empresa"</p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end header -->
+<!--BOTON DE WHATS APP-->
+
+<!-- start slider -->
+<section id="home" class="no-padding no-transition">
+    <h1 class="display-none" aria-hidden="true">FESE</h1>
+    <h2 class="display-none" aria-hidden="true">FESE</h2>
+    <div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="boltex-4"
+         data-source="gallery" style="background:transparent;padding:0px;left: 0 !important;;">
+        <!-- START REVOLUTION SLIDER 5.4.5 fullscreen mode -->
+        <div id="rev_slider_5_1" class="rev_slider fullscreenbanner carrusel  "  data-version="5.4.5">  <!--aqui hacemos la referencia de la imagen de bienvenida, la cual se encuentra en la hoja de estilo en enlace a esta imagen-->
+            <ul class="">    
+                    <div class= " centrar " >
+                      <div class=" text-center ">
+                          <div >                              
+                              <h2  class ="text-white ">                                
+                                <strong class="centrar">Aprovecha los beneficios que tenemos para tu empresa </strong>  <!--Aqui podemos agregar un texto arriba del titulo, este texno va sin la etiqueta <p>-->
+                              </h2>
+                              <div class="text-large  margin-10px-bottom font-weight-100  text-white">
+                                <h5 class = "text-white ">
+                                    Identificamos, desarrollamos, capacitamos y vinculamos el talento universitario con empresas de 
+                                    cualquier tamaño.
+                                </h5>
+                              </div>                      
+                            </div>
+                                <br><a href="#feature"  class=" scroll btn btn-transparent-white btn-rounded btn-large margin-20px-top texto_boton">Mas información</a>
+                            </div>
+                  </div>
+
+                </li>  
+                
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+    </div><!-- END REVOLUTION SLIDER -->
+
+</section>
+<!-- slider end -->
+
+<!-- start feature -->
+<section id="feature" class="how-it-work text-center  no-transition"> <!----------------ESTO ES UAN SECCION DEL MENU----------------------->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
+                <div class="sec-title margin-100px-bottom">
+                    <div class="text-large color_titulo margin-10px-bottom font-weight-400 ">
+                        <strong>Todo lo que necesitas saber</strong>
+                    </div>
+                    <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                        <strong>Resumen</strong> 
+                    </h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom   text-extra-dark-gray">  <!--BREVE EXPLICACION DEL LA SECCION DE RESUMEN--------------------------->
+                        La Fundación trabaja en beneficio de tres públicos meta, los
+                        estudiantes que reciben apoyo, las instituciones de educación
+                        superior como herramienta de vinculación y las empresas que son
+                        el motor de operación.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-one-container">
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="how-box-one inner-box xs-margin-100px-bottom">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><!--https://fontawesome.com/v4/icons/-- ESTA ES UNA LISTA DE LOS ICONOS QUE PODEMOS USAR>-->
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">
+                        <strong>Estudiantes</strong>
+                    </div>
+                    <p class="text-extra-dark-gray">
+                       Como estudiante, puedes crecer y desempeñarte de manera positiva dentro de las empresas.
+                    </p>
+                </div>
+            </div>
+
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="how-box-one inner-box sm-margin-100px-bottom xs-margin-100px-bottom">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">
+                       <strong> Empresas</strong>
+                    </div>
+                    <p class="text-extra-dark-gray">
+                        Identificamos, desarrollamos, capacitamos y vinculamos el talento universitario con empresas de cualquier tamaño.
+                    </p>
+                </div>
+            </div>
+
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="how-box-one inner-box">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">
+                        <strong>Universidades</strong>
+                    </div>
+                    <p class="text-extra-dark-gray">
+                        Nos dedicamos a vincular jóvenes universitarios de todo el país con oportunidades de  experiencia laboral. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--end feature -->
+
+<!-- start about -->
+<section id="about" class="no-padding">
+
+
+
+    <div class="half-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding">
+<!----------------------------------------------------------------------------------------------------------->
+                    <div class=" about-image hover-effect contenedorDescripcion">
+                        <img alt="Fese Empresarial" src="images/index/BeneficiosEmpresas.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+
+                        <p class="textoTitulo"> 
+                            <strong> Aprovecha los beneficios que tenemos para tu empresa </strong>
+                        </p>
+
+                        <p class="textoContenido">
+                            Identificamos, desarrollamos, capacitamos y vinculamos el talento universitario con empresas de cualquier tamaño.
+                        </p>
+                    </div>
+<!------------------------------------------------------------------------------------------------------------->
+                    
+                    <!--------------------------------------------------------------------------------->
+                </div>
+                <div class="col-md-6 sm-padding-50px-tb">
+                    <div class="split-box text-center center-block equalheight">
+                        <div class="about-box">
+                            <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">
+                                <!--Aqui podemos agregar un texto arriba del titulo, este texno va sin la etiqueta <p>-->
+                            </div>
+                            <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                                <strong>Empresarial</strong>
+                            </h3>
+                            <p class ="text-extra-dark-gray">
+                              
+                                Somos una asociación civil respaldada por instituciones de educación superior, dedicada a vincular a jóvenes universitarios de todo el país con oportunidades de experiencia laboral; tenemos una amplia base de datos de estudiantes altamente capacitados y motivados que están listos para aplicar sus habilidades y conocimientos en su empresa.
+                            </p>
+                            <a href="http://empresarial.fese.mx/" class="btn btn-blue btn-rounded btn-large margin-20px-top">Más informacion.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding pull-right sm-float-none">
+
+            <!------------------------------------------------------------------------------------>
+
+            <div class="about-image hover-effect contenedorDescripcion">
+                <img alt="Practicas profesionales" src="images/index/PracticasEstadiasEstancias.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+                <p class="textoTitulo"> 
+                    <strong> Realiza tus practicas, estadías y/o estancias profesionales en las mejores empresas
+                    </strong>
+                </p>
+
+                <p class="textoContenido">
+                    Como estudiante puedes crecer y desempeñarte de manera positiva dentro de las empresas.
+
+                </p>
+            </div>
+            <!------------------------------------------------------------------------------------->
+
+                </div>
+                <div class="col-md-6 sm-padding-50px-tb">
+                    <div class="split-box text-center center-block equalheight">
+                        <div class="about-box">
+                            <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">
+                                 <!--Aqui podemos agregar un texto arriba del titulo, este texto va sin la etiqueta <p>-->
+                            </div>
+                            <h3 class=" alt-font text-extra-dark-gray font-weight-300">
+                                <strong>
+                                    Apoyamos a universidades, empresas y estudiantes
+                                </strong>
+                            </h3>
+                            
+                            <p text-extra-dark-gray>
+                                
+                            </p>
+                            <!--<a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Informarte</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half-section">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6 no-padding">
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="about-image hover-effect contenedorDescripcion">
+                    <img alt="asociación civil" src="images/index/ApoyoEmpresasUniversidades.webp" class="equalheight"   width="701" height="430">  <!--AQUI ES LA PRIMERA PARTE DE "QUE HACEMOS"--------->
+                
+                    <p class="textoTitulo"> 
+                        <strong>Apoyamos a universidades, empresas y estudiantes   </strong>
+                    </p>
+                
+                    <p class="textoContenido">
+                        Somos una asociación civil respaldada por instituciones de educación superior, dedica a vincular jóvenes universitarios de todo el país con oportunidades de experiencia laboral.
+                
+                
+                    </p>
+                </div>
+                <!---------------------------------------------------------------------------------------------------->
+              </div>
+              <div class="col-md-6 sm-padding-50px-tb">
+                  <div class="split-box text-center center-block equalheight">
+                      <div class="about-box">
+                          <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">
+                              <!--Aqui podemos agregar un texto arriba del titulo, este texno va sin la etiqueta <p>-->
+                          </div>
+                          <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                              <strong>Instituciones</strong>
+                          </h3>
+                          <p class="text-extra-dark-gray">
+                            La FESE es una asociación civil que promueve, gestiona y articula a través del trabajo
+                             colaborativo de los sectores educativo, productivo y gubernamental, la vinculación de la 
+                             oferta de la educación superior con la demanda actual y futura del sector económico-productivo.
+                          </p>
+                          <!--<a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Ir a</a>--><!--QUITO EL BOTON YA QUE ESTA  ESTA SECCION ES SOLO INFORMATIVA-->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------->
+<!-- aqui empieza la parte de las empresas que trabajan con nosotros-->
+<section>
+<div class="container" >
+    <h3 class=" alt-font text-extra-dark-gray font-weight-300 text-center">
+        <strong>Ellos confian en nosotros</strong>
+    </h3><br>
+    <div class="row margenFondoDivs">
+    <!--<div class="row margenFondoDivs">-->
+    <!--------------------------------------------------------------------------------------->
+        
+        <div class="col-sm-1 sangriaPrimerDiv  sangriadDiv">
+            <a href="http://www.anuies.mx/" target="_black"> <img  src="images/logos/LogoAnuies.webp" alt="Logo de Anuies" title="Anuies"  width="77" height="96"> </a>
+        </div>
+        <div class="col-sm-2 sangriadDiv">
+            <a href="http://www.prosoft.economia.gob.mx/" target="_black"><img  src="images/logos/LogoProsoft.webp" alt="Logo de Prosoft"  title="Prosoft" class="img-responsive" width="188" height="62"> </a>                            
+        </div>
+        <div class="col-sm-2 sangriadDiv">
+            <a href="https://www.asf.gob.mx/Default/Index" target="_black" ><img  src="images/logos/LogoASF.webp" alt="Logo de Auditoria Superior de la Federacion" title="Auditoria superior de la federacion" class="img-responsive" width="279" height="95"></a>     
+        </div>
+        <div class="col-sm-3 sangriadDiv">
+            <a href = "https://www.gob.mx/sep/" target="_black"><img  src="images/logos/LogoSEP.webp" alt="Logo de Secretaria de Educacion Publica" title="Secretaria de educacion publica"  class="img-responsive" width="77" height="96"></a>    
+        </div>
+        
+    </div>
+    <div class="row margenFondoDivs">
+        <div class="col-sm-2 sangriaPrimerDiv sangriadDiv">
+            <a href="https://www.gob.mx/se/" target="_black"><img  src="images/logos/LogoSE.webp" alt="Logo de Secretaria de Economia " title="Secretaria de economia" class="img-responsive" width="196" height="81"></a> 
+        </div>
+        <div class="col-sm-2 sangriadDiv">
+            <a href="https://www.samsung.com/mx/" target="_black"><img  src="images/logos/LogoSamsung.webp" alt="Logo de Samsung" title="Samsung" class="img-responsive" width="287" height="60"></a> 
+        </div>
+        <div class="col-sm-2 sangriadDiv">
+            <a href="https://www.santander.com.mx/" target="_black"><img  src="images/logos/LogoSantander.webp" alt="Logo de Santander" title="Banco Santander" class="img-responsive" width="312" height="61" ></a>
+        </div>
+        <div class="col-sm-2 sangriadDiv">
+            <a href="https://www.lear.com/" target="_black"><img  src="images/logos/LogoLear.webp" alt= "Logo de Lear Corporation" title ="Lear Corporaton" class="img-responsive" width="301" height="95"></a>  
+        </div>
+    </div>
+</section>
+
+<!--footer Start-->
+<footer id="contact" class="FondoVerdeFese padding-30px-tb ">  <!--la clase de color negro es:bg-extra-dark-gray -->
+    <div class="footer-widget-area">
+        <div class="container">
+            <div class="row">
+            <!--------------------------------------------------------------------------------------->
+                <div class="col-sm-2">
+                    <a href="esr.html" target="_black"> <img src="images/logos/LogoESR.webp" class="equalheight" title="Ve nuestro apartado esr" width="200" height="80" alt="Empresa socialmente responsable"/></a> <!--Se cambio el nombre y se agrego un metadato-->
+                </div>
+            <!--------------------------------------------------------------------------------------->
+            <!--<div class="row margin-5px-bottom">-->
+                <div class="col-sm-1 no-padding" >
+                    <div class="contact-icon text-white">
+                        <i class="fa fa-map-marker" aria-hidden="true"  ></i>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                   <p class="text-small text-center text-white">
+                        Fundación Educación Superior-Empresa A.C.<br>
+                        Tenayuca 200, Santa Cruz Atoyac,<br>
+                        Benito Juárez, 03310, CDMX.
+                    </p>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+                <div class="col-sm-1 no-padding text-center"  >
+                    <div class="contact-icon text-white">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <p class="text-small  text-white  text-center" >
+                        55 5605 6100<br>
+                    </p>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+                <div class="col-sm-1 no-padding text-center"  >
+                    <div class="contact-icon text-white">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <p class="text-small  text-white  text-center" >
+                        contacto@fese.mx
+                    </p>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+                <br>
+                <!--<div class="col-sm-1 no-padding text-center"  >
+                    <div class="contact-icon text-white">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                </div>-->
+                <div class="col-sm-12 text-center" >
+                    <br>
+                    <a href="avisodeprivacidad.html" class="btn btn-transparent-white btn-rounded btn-large margin-20px-top">AVISO DE PRIVACIDAD</a>
+                    
+                <!--<div class="col-sm-1">-->
+                    
+                </div>
+            </div>
+        </div>  
+            <!--<p class="text-white text-large margin-10px-bottom margin-20px-top">© Boltex</p>-->
+            <!--<p class="text-light-gray margin-10px-bottom">Made With Love By ThemesIndustry</p>-->
+        </div>
+    </div>
+
+</footer>
+<!-- end footer -->
+
+<!-- javascript libraries -->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.appear.min.js"></script>
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- magnific popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- fancybox -->
+<script src="js/jquery.fancybox.min.js"></script>
+<!-- wow -->
+<script src="js/wow.js"></script>
+<!-- parallax -->
+<script src="js/parallaxie.min.js"></script>
+<!-- equal hieght -->
+<script src="js/jquery.matchHeight-min.js"></script>
+<!-- text-rotate -->
+<script src="js/morphext.min.js"></script>
+<!-- text-rotate -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- revolution -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- revolution extension -->
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- Google Map Api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgC6ZapXdUzFdeQOFhdm_wucwlDMMQ8CQ"></script>
+<script src="js/map.min.js"></script>
+<!-- setting -->
+<script src="js/main.min.js"></script>
+<!--sCRIPT PARA EL BOTON DE WHATSAPP--->
+<script src="btn-ws.js"></script>   
+</body>
+</html>
